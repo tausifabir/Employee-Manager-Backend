@@ -20,12 +20,13 @@ public class Employee implements Serializable {
     private String employeeCode;
     private String employeeBlood;
 
-    public Employee(String employeeFirstName, String employeeLastName, String employeeEmail, String employeeDesignation, String employeePhone) {
+    public Employee(String employeeFirstName, String employeeLastName, String employeeEmail, String employeeDesignation, String employeePhone,String employeeImageUrl) {
         this.employeeFirstName = employeeFirstName;
         this.employeeLastName = employeeLastName;
         this.employeeEmail = employeeEmail;
         this.employeeDesignation = employeeDesignation;
         this.employeePhone = employeePhone;
+        this.employeeImageUrl = employeeImageUrl;
     }
 
     public Employee(String employeeFirstName, String employeeLastName, String employeeEmail, String employeeDesignation, String employeePhone, String employeeImageUrl, String employeeCode, String employeeBlood) {

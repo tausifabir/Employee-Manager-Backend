@@ -40,4 +40,9 @@ public class EmployeeService {
         return employeeRepo.findEmployeeById(id)
                 .orElseThrow(()-> new UserNotFoundException("User by id "+id+" was not found!"));
     }*/
+
+    public void deleteEmployeeById(Long id){
+        Employee employee = employeeRepo.getById(id);
+        employeeRepo.delete(employee);
+    }
 }
